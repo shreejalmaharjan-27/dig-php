@@ -1,5 +1,13 @@
 <?php
+//get domain query
 $domain_inp = $_GET["domain"];
-$shellexec = shell_exec("dig $domain_inp");
-echo '<pre>'.$shellexec.'</pre>';
+$domain = htmlspecialchars($domain_inp, ENT_QUOTES);
+if (preg_match("/^[A-Za-z0-9-]+$/", $domain)) {
+    //execute shell command
+    $shellexec = shell_exec("dig $domain");
+    echo '<pre>'.$shellexec.'</pre>';
+} else {
+    // does not contain only letters, numbers, and hyphens
+    echo 'Invalid domain name provided!';
+}
 ?>
