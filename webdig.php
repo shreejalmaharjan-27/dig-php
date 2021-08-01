@@ -13,7 +13,7 @@ if (preg_match("/^[.A-Za-z0-9-]+$/", $domain)) {
     }
     else{
             //execute shell command
-        $shellexec = shell_exec("dig -p $port $options1 $domain $options2");
+        $shellexec = shell_exec("dig $options1 $domain $options2");
         echo '<pre>'.$shellexec.'</pre>';
     }
 } else {
