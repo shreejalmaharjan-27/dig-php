@@ -5,7 +5,7 @@
 <body>
 <form action="webdig.php" method="GET">
 <input required name="domain" placeholder="enter domain name">
-<input name="port" type="number" placeholder="(optional) port number">
+<input name="port" type="number" value="80" placeholder="(optional) port number">
 <select name="opt1">
 <option value="" disabled selected>Choose connect method</option>
 <option value="-4">IPV4</option>

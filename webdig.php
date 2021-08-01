@@ -9,7 +9,7 @@ $options2 = htmlspecialchars($options_pre2, ENT_QUOTES);
 $domain = htmlspecialchars($domain_inp, ENT_QUOTES);
 if (preg_match("/^[.A-Za-z0-9-]+$/", $domain)) {
     if($port < 1 or $port > 65535){
-         print $x. 'is invalid port';
+         print $port. 'is invalid port range.';
     }
     else{
             //execute shell command
