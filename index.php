@@ -7,7 +7,13 @@
 <input required name="domain" placeholder="enter domain name">
 <select name="opt">
 <option value="" disabled selected>Choose option</option>
-<option value="+nocomments +noquestion +noauthority +noadditional +nostats">Answer Only</option>
+<option value="ANY +noall +answer">Get All records</option>
+<option value="+nocomments +noquestion +noauthority +noadditional +nostats">Get Answer Only</option>
+<option value="MX +noall +answer">Get MX records</option>
+<option value="NS +noall +answer">Get NS records</option>
+<option value="mx +short">Get Short MX records</option>
+<option value="ns +short">Get Short NS records</option>
+<option value="+short">Get Short Output</option>
 </select>
 <button type="submit">submit</button>
 </form>
