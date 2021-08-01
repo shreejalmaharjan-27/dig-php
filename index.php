@@ -5,6 +5,8 @@
 <body>
 <form action="webdig.php" method="GET">
 <input required name="domain" placeholder="enter domain name">
+<input type="checkbox" name="trace" value="+trace">
+<label for="trace">Trace</label>
 <select name="opt1">
 <option value="" disabled selected>Choose connect method</option>
 <option value="-4">IPV4</option>
