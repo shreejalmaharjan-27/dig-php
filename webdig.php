@@ -1,3 +1,4 @@
 <?php
-// yet to add
+$domain = $_POST["domain"];
+echo $domain;
 ?>

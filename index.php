@@ -3,8 +3,9 @@
 <title>Execute Dig commands</title>
 </head>
 <body>
-<form action="" method=POST>
-<input required>
+<form action="webdig.php" method=POST>
+<input required name="domain">
+<button type="submit">submit</button>
 </form>
 </body>
 </html>
